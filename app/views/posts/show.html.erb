@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @post.username %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @post.content %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @post.comments %>
+</p>
+
+<p>
+  <strong>Points:</strong>
+  <%= @post.points %>
+</p>
+
+<p>
+  <strong>Reports:</strong>
+  <%= @post.reports %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
